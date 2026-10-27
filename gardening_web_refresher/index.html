@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gardening Hobby</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#home"> My Garden</a>
+      <div class="nav-links">
+        <a href="#benefits">Benefits</a>
+        <a href="#plants">Favourite plants</a>
+        <a href="#tips">Tips</a>
+      </div>
+      <button id="themeButton" type="button" aria-pressed="false">Dark mode</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">A hobby that helps me grow</p>
+        <h1>Welcome to my gardening page</h1>
+        <p>Gardening is a relaxing hobby. I enjoy caring for plants, watching them grow and making outdoor spaces greener.</p>
+        <a class="button-link" href="#plants">Explore my plants</a>
+      </div>
+      <img src="images/garden.svg" alt="Illustration of a small garden with plants and flowers">
+    </section>
+
+    <section id="benefits" class="section">
+      <h2>Why I enjoy gardening</h2>
+      <div class="benefit-grid">
+        <article class="card"><span aria-hidden="true"></span><h3>Relaxing</h3><p>Spending time with plants helps me slow down and feel calm.</p></article>
+        <article class="card"><span aria-hidden="true"></span><h3>Learning</h3><p>I learn how plants grow and what they need to stay healthy.</p></article>
+        <article class="card"><span aria-hidden="true"></span><h3>Useful</h3><p>Growing herbs and vegetables can provide fresh ingredients.</p></article>
+      </div>
+    </section>
+
+    <section id="plants" class="section">
+      <h2>Some of my favourite plants</h2>
+      <div class="plant-grid">
+        <article class="plant-card"><img src="images/flowers.svg" alt="Illustration of colourful flowers"><h3>Flowers</h3><p>Flowers add colour and attract pollinators.</p></article>
+        <article class="plant-card"><img src="images/vegetables.svg" alt="Illustration of carrots and leafy vegetables"><h3>Vegetables</h3><p>Vegetables are rewarding to grow and harvest.</p></article>
+      </div>
+    </section>
+
+    <section id="tips" class="section tips-section">
+      <h2>Beginner gardening tips</h2>
+      <p>Small steps can make it easier to care for a garden.</p>
+      <button id="tipsButton" type="button" aria-expanded="false" aria-controls="tipsList">Show gardening tips</button>
+      <ul id="tipsList" hidden>
+        <li>Check what amount of sunlight each plant needs.</li>
+        <li>Water plants when the soil needs it, rather than on a strict schedule.</li>
+        <li>Use pots with drainage holes to help prevent waterlogging.</li>
+        <li>Be patient: plants take time to grow.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><p>Created for my Web Refresher activity · Gardening is a hobby I can keep learning about.</p></footer>
+</body>
+</html>
